@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="examen coffe shop" />
+    <meta name="author" content="Grupo 3" />
+    <title>TechChange</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z">
+            </path>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+            </path>
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
+            </path>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
+            </path>
+        </symbol>
+    </svg>
+    <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand" href="#">
+                <img src="./img/icon.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
+            </a>
+            <a class="navbar-brand" href="#carouselExampleDark"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active " href="#destacados">Productos Destacados</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#testimonio">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#About">Contactenos</a></li>
+                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                        <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-light">
+
+                        </div>
+                        <hr class="d-lg-none my-2 text-white-50">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button
+                            class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                            id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                            data-bs-display="static" aria-label="Toggle theme (auto)">
+                            <svg class="bi my-1 theme-icon-active">
+                                <use href="#circle-half"></use>
+                            </svg>
+                            <span class="d-lg-none ms-2" id="bd-theme-text">Theme</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                            <li>
+                                <button id="myButton" type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="light" aria-pressed="false">
+                                    <svg class="bi me-2 opacity-50 theme-icon">
+                                        <use href="#sun-fill"></use>
+                                    </svg>
+                                    Light
+                                    <svg id="icon" class="bi ms-auto d-none">
+                                        <use href="#check2"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button id="myButton" type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="dark" aria-pressed="false">
+                                    <svg class="bi me-2 opacity-50 theme-icon">
+                                        <use href="#moon-stars-fill"></use>
+                                    </svg>
+                                    Dark
+                                    <svg id="icon" class="bi ms-auto d-none">
+                                        <use href="#check2"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button id="myButton" type="button"
+                                    class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                                    aria-pressed="true">
+                                    <svg class="bi me-2 opacity-50 theme-icon">
+                                        <use href="#circle-half"></use>
+                                    </svg>
+                                    Auto
+                                    <svg id="icon" class="bi ms-auto ">
+                                        <use href="#check2"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-light" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Compras
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div>
+            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./img/b1.jpeg" class="d-block w-100" alt="bg1">
+                        <div class="carousel-caption d-none d-md-block text-bg-light ">
+                            <h5>¡Ayuda a transformar vidas y libera espacio en tu hogar! Dona o adquiere aparatos
+                                tecnológicos en nuestra tienda solidaria."</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/b2.jpg" class="d-block w-100" alt="bg2">
+                        <div class="carousel-caption d-none d-md-block text-bg-light">
+                            <h5>¿Tienes dispositivos electrónicos en desuso? Dales una segunda oportunidad y fomenta la
+                                reutilización ayudando a quienes más lo necesitan.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/b3.jpeg" class="d-block w-100" alt="bg3">
+                        <div class="carousel-caption d-none d-md-block text-bg-light">
+                            <h5>¡La tecnología puede cambiar el mundo! Dona tus dispositivos antiguos y adquiere los
+                                últimos avances en nuestra tienda solidaria.</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5" id="productos">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div
+                class="row gx-3 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/1.jpg" alt="img1" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Computador Mesa</h5>
+                                <p class="card-text">Dispositivo electrónico que procesa información y realiza tareas
+                                    computacionales
+                                </p> <br>
+                                <span class="text-muted  fw-bold">$1´200.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/2.jpg" alt="imagen2" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Tablet</h5>
+                                <p class="card-text">Tablet compacta y potente. Pantalla HD, procesador rápido, gran
+                                    capacidad de almacenamiento. Ideal para tareas diarias y entretenimiento</p> <br>
+                                <span class="text-muted  fw-bold">$600.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/3.webp" alt="imagen3" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Combo hogar</h5>
+                                <p class="card-text">Kit de electrodomésticos que incluye una arrocera, una licuadora y
+                                    un termo para agua caliente.
+                                </p> <br>
+                                <span class="text-muted  fw-bold">$500.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/4.jpg" alt="imagen4" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Combo tec</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <p class="card-text">Un combo poderoso: computadora con gran rendimiento, celular con
+                                    cámara de alta resolución y tablet versátil.</p>
+                                <span class="text-muted text-decoration-line-through">$3´000.000 Cop</span> <br>
+                                <span class="text-muted  fw-bold">$2´500.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/5.png" alt="imagen5" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Portatil</h5>
+                                <p class="card-text">Computadora portátil para uso móvil y conveniente en cualquier
+                                    lugar.</p>
+                                <span class="text-muted text-decoration-line-through">$1´700.000 Cop</span><br>
+                                <span class="text-muted  fw-bold">$1´500.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/6.jpg" alt="imagen6" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Olla arrocera</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <p class="card-text">Electrodoméstico para cocinar arroz de manera fácil y automática
+                                </p>
+                                <span class="text-muted  fw-bold">$120.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/7.png" alt="imagen7" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Sanduchera</h5>
+                                <p class="card-text">Electrodoméstico que prepara sándwiches calientes y crujientes en
+                                    minutos.</p>
+                                <span class="text-muted text-decoration-line-through">$150.000 Cop</span><br>
+                                <span class="text-muted  fw-bold">$100.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/8.png" alt="imagen8" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Lavadora</h5>
+                                <p class="card-text">Electrodoméstico que lava, enjuaga y centrifuga la ropa de manera
+                                    automática y eficiente</p>
+                                <span class="text-muted  fw-bold">$3´000.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/9.png" alt="imagen9" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Batidora</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <p class="card-text">Electrodoméstico versátil que mezcla y bate ingredientes para
+                                    preparar deliciosas recetas.</p>
+                                <span class="text-muted text-decoration-line-through">$170.000 Cop</span><br>
+                                <span class="text-muted  fw-bold">$150.000 Cop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./img/10.png" alt="imagen10" />
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Celular</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <p class="card-text">Celular compacto con pantalla AMOLED, cámara dual y batería
+                                    duradera. Perfecto para llevar a todas partes.</p><br>
+                                <span class="text-muted  fw-bold">$900.000 Cop </span>
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section class="banner">
+
+    </section>
+
+
+
+
+    <section class="container p-2 px-4 px-lg-5 mt-5 m-5" id="destacados">
+        <h5 class="text-center m-5">PRODUCTOS DESTACADOS</H5>
+        <div class=" row m-5 gx-lg-3 row-cols-1 row-cols-md-2 row-cols-xl-5 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                    </div>
+
+                    <img class="card-img-top" src="./img/10.png" alt="imagen10" />
+                    <div class="card-body ">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Celular</h5>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <p class="card-text">Celular compacto con pantalla AMOLED, cámara dual y batería duradera.
+                                Perfecto para llevar a todas partes.</p>
+                            <span class="text-muted text-decoration-line-through">$1´500.000 Cop</span><br>
+                            <span class="text-muted  fw-bold">$900.000 Cop</span>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                    </div>
+                    <img class="card-img-top" src="./img/9.png" alt="imagen9" />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Batidora</h5>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <p class="card-text">Electrodoméstico versátil que mezcla y bate ingredientes para preparar
+                                deliciosas recetas.</p>
+                            <span class="text-muted text-decoration-line-through">$170.000 Cop</span><br>
+                            <span class="text-muted  fw-bold">$150.000 Cop</span>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                    </div>
+                    <img class="card-img-top" src="./img/8.png" alt="imagen8" />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Lavadora</h5>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <p class="card-text">Electrodoméstico que lava, enjuaga y centrifuga la ropa de manera
+                                automática y eficiente</p>
+
+                            <span class="text-muted  fw-bold">$3´000.000</span>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                    </div>
+                    <img class="card-img-top" src="./img/7.png" alt="imagen7" />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Sanduchera</h5>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <p class="card-text">Electrodoméstico que prepara sándwiches calientes y crujientes en
+                                minutos.</p>
+                            <span class="text-muted text-decoration-line-through">$150.000 Cop</span><br>
+                            <span class="text-muted  fw-bold">$100.000 Cop</span>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                    </div>
+                    <img class="card-img-top" src="./img/6.jpg" alt="imagen6" />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Olla arrocera</h5>
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <p class="card-text">Electrodoméstico para cocinar arroz de manera fácil y automática</p>
+
+                            <span class="text-muted  fw-bold">$120.000 Cop</span>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-secondary" href="#">Comprar</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner2">
+    </section>
+    <div class="container m-4" id="testimonio">
+        <h5 class="m-2 text-center">EXPERIENCIAS DE COMPRA</h5>
+        <div class="row  m-2 ">
+            <div class="col-6">
+                <div class="card m-1 mb-3" style="max-width: 500px;">
+                    <div class="row g-2">
+                        <div class="col-md-4">
+                            <img src="./img/t1.jpeg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Juan C</h5>
+                                <p class="card-text">Compré un teléfono celular en esta tienda y estoy realmente
+                                    impresionado con su rendimiento. La atención al cliente fue excepcional y el
+                                    personal me ayudó a elegir el dispositivo perfecto para mis necesidades.
+                                    Definitivamente volveré a comprar aquí.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-6">
+                    <div class="card m-1 mb-3" style="max-width: 500px;">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <img src="./img/t2.jpeg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">María R</h5>
+                                    <p class="card-text">Compré una laptop en esta tienda y no podría estar más
+                                        feliz con mi compra. La calidad del producto es excelente y el precio fue
+                                        muy competitivo. Además, el proceso de compra fue rápido y sencillo.
+                                        Recomiendo esta tienda a todos los amantes de la tecnología.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="About">
+            <div class="container mt-3">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-3 text-center">
+                        <h3>VISITENOS</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.98224123633!2d-75.66605080008834!3d6.243202309796886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442859d833cfa3%3A0xa3fca5c91547777f!2sCESDE!5e0!3m2!1ses!2sco!4v1684891893413!5m2!1ses!2sco"
+                            width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-12 col-md-5 align-self-center">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="bi bi-person-circle"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Usuario"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-envelope-paper-fill"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Correo"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="bi bi-telephone-fill"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Telefono"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="bi bi-calendar-date-fill"></i>
+                                        </span>
+                                        <input type="date" class="form-control" placeholder="Fecha"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="bi bi-clock-fill"></i>
+                                        </span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Selecione Hora</option>
+                                            <option value="1">1pm - 2pm</option>
+                                            <option value="2">3pm - 4pm</option>
+                                            <option value="3">5pm - 6pm</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="bi bi-signpost-split"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Direccion"
+                                        aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <button type="button" class="btn btn-secondary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="text-center mt-5">
+
+            <div class="container p-1 ">
+
+                <div class="row mt-4">
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0 ">
+                        <img src="./img/icon.png" class="logo_footer" alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-white">
+                        <h5 class="text-uppercase">ESCRIBENOS A</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg>
+                            </li>
+                            <li>
+                                <i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>tech@change.com.co
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-white">
+                        <h5 class="text-uppercase">SIGUENOS</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                    class="bi bi-facebook my-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.4)">
+                        © 2023 Copyright:
+                        <a class="text-white">Todos lo derechos reservados</a>
+                        <a class="text-white">Politicas de datos y Privacidad</a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script>
+            var nav = document.querySelector("nav");
+            window.addEventListener("scroll", function () {
+                if (window.pageYOffset > 100) {
+                    nav.classList.add("bg-dark", "shadow", "navbar-dark");
+                } else {
+                    nav.classList.remove("bg-dark", "shadow")
+                }
+            });
+        </script>
+</body>
+
+</html>
